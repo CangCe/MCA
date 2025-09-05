@@ -1,11 +1,20 @@
 {
-    "MyTask1": {},
-    "MyTask2": {},
-    "MyTask3": {},
-    "MyTask4": {
-        "recognition": "Custom",
-        "custom_recognition": "my_reco_222",
-        "action": "Custom",
-        "custom_action": "my_action_111"
+    "进入职级津贴": {
+        "recognition": "TemplateMatch",
+        "template": "进入职级津贴.png",        
+        "action": "Click",        
+        "next": ["领取职级津贴"]     
+    },
+    "领取职级津贴": {
+        "recognition": "OCR",         
+        "expected": "领取",           
+        "action": "Click",
+        "next": ["关闭职级津贴"]
+    },
+    "关闭职级津贴": {
+        "recognition": "TemplateMatch",
+        "template": "关闭职级津贴.png",
+        "action": "Click",
+        "next": ["进入职级津贴"]
     }
 }
