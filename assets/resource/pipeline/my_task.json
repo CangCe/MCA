@@ -1,1 +1,141 @@
-{"__mpe_config_MCA":{"__mpe_code":{"prefix":"","filename":"MCA","version":"v0.5.1"}},"进入职级津贴":{"recognition":{"type":"TemplateMatch","param":{"template":["进入职级津贴.png"]}},"action":{"type":"Click","param":{}},"__mpe_code":{"position":{"x":2309,"y":314}},"next":["领取职级津贴"]},"领取职级津贴":{"recognition":{"type":"OCR","param":{"expected":["领取"]}},"action":{"type":"Click","param":{}},"__mpe_code":{"position":{"x":2580,"y":314}},"next":["退出职级津贴"]},"退出职级津贴":{"recognition":{"type":"TemplateMatch","param":{"template":["退出职级津贴.png"]}},"action":{"type":"Click","param":{}},"__mpe_code":{"position":{"x":2873,"y":312}}},"领取左上角的两个东西":{"recognition":{"type":"DirectHit","param":{}},"action":{"type":"DoNothing","param":{}},"pre_delay":1500,"__mpe_code":{"position":{"x":2058,"y":311}},"next":["进入职级津贴"]}}
+{
+    "__mpe_config_MCA": {
+        "__mpe_code": {
+            "prefix": "",
+            "filename": "MCA",
+            "version": "v0.5.1"
+        }
+    },
+    "进入职级津贴": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["进入职级津贴.png"]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2309,
+                "y": 314
+            }
+        },
+        "next": ["领取职级津贴"]
+    },
+    "领取职级津贴": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["领"],
+                "roi": [873, 559, 230, 55]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "timeout": 10000,
+        "__mpe_code": {
+            "position": {
+                "x": 2580,
+                "y": 314
+            }
+        },
+        "next": ["退出职级津贴"]
+    },
+    "退出职级津贴": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 2872,
+                "y": 312
+            }
+        },
+        "next": ["进入股东回馈"]
+    },
+    "领取左上角的两个东西": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "pre_delay": 1500,
+        "__mpe_code": {
+            "position": {
+                "x": 2058,
+                "y": 311
+            }
+        },
+        "next": ["进入职级津贴"]
+    },
+    "进入股东回馈": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["进入股东回馈.png"]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 3186,
+                "y": 316
+            }
+        },
+        "next": ["领取股东回馈"]
+    },
+    "领取股东回馈": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["领"],
+                "roi": [747, 538, 166, 48]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 3542,
+                "y": 318
+            }
+        },
+        "next": ["关闭股东回馈"]
+    },
+    "关闭股东回馈": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["关闭股东回馈.png"]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "__mpe_code": {
+            "position": {
+                "x": 3876,
+                "y": 322
+            }
+        }
+    }
+}
